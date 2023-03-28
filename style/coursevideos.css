@@ -1,0 +1,37 @@
+
+@media (max-width:768px){
+
+    html{
+        font-size: 50%;
+    }
+ 
+ }
+
+
+ .video{
+    background-color: rgb(42, 46, 46);
+    font-family: Lato, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    padding-left: 0rem;
+    height: 100%;
+  } 
+
+ .heading h1 span{
+    color:var(--yellow);
+}
+
+
+ .container .heading h1{
+    margin-left: 0rem;
+    margin-bottom: 5rem;
+    font-size:5rem;
+    color:#fff;
+  
+} 
+
+#video
+{
+    margin:2rem;
+     margin-left: 10px;
+}

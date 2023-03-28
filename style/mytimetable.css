@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600&display=swap');
+
+/* ============= Styling for time table ================ */
+
+ .table{
+  font-family: Lato, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  padding-left: 0rem;
+  height: 100%;
+} 
+
+header {
+  width: 100%;
+  height: 48px;
+  background-color: #ddd;
+}
+
+ol {
+  list-style: none;
+}
+
+.timetable {
+  display: flex;
+  background: #ecf0f1;
+  color: #444;
+}
+
+.nowMarker {
+  position: absolute;
+  border-bottom: 2px solid #ff7f6e;
+  z-index: 100;
+  width: 100%;
+  top: -2px;
+  transition: top 2s ease-in-out;
+}
+
+.timings {
+  margin: 1em 0 0 0;
+  padding: 0 3px 0 0;
+  width: 3em;
+  height: 68em;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-around;
+}
+
+.week {
+  margin: 0;
+  display: -webkit-flex;
+  display: flex;
+  overflow-x: auto;
+  padding: 0;
+  width: 100%;
+}
+
+.day {
+  position: relative;
+  border-bottom: 1px solid #ddd;
+  padding: 0;
+  min-width: calc(100.5% / 3);
+  transition: min-width 0.2s ease-in-out;
+}
+
+.name {
+  display: block;
+  height: 3em;
+  line-height: 3em;
+  text-align: center;
+}
+
+.hour {
+  position: absolute;
+  height: 4em;
+  text-indent: 3px;
+  width: 100%;
+  color: white;
+}
+
+.hour__08 {
+  top: 3em;
+}
+
+.hour__09 {
+  top: 7em;
+}
+
+.hour__10 {
+  top: 11em;
+}
+
+.hour__11 {
+  top: 15em;
+}
+
+.hour__12 {
+  top: 19em;
+}
+
+.hour__13 {
+  top: 23em;
+}
+
+.hour__14 {
+  top: 27em;
+}
+
+.hour__15 {
+  top: 35rem;
+}
+
+.hour__16 {
+  top: 35em;
+}
+
+.hour--two {
+  height: 8em;
+}
+
+.hour--three {
+  height: 12em;
+}
+
+.class .dip{
+  background: #e74c3c;
+  margin-top: auto;
+  height: 3.2cm;
+  padding-top: 1cm;
+  padding-left: 1.5cm;
+  
+}
+
+
+.class .web{
+
+    background: #735d96;
+    margin-top: -4.9cm;
+     height: 2.9cm;
+     padding-top: 1cm;
+     padding-left: 1.5cm;
+}
+
+.class .info{
+    background: #28c14e;
+   margin-top: 1.90cm;
+    height: 2.9cm;
+    padding-top: 1cm;
+    padding-left: 1.5cm;
+}
+
+
+
+.class .ppit{
+    background: #ad458c;
+   margin-top: 4.90cm;
+    height: 2.9cm;
+    padding-top: 1cm;
+    padding-left: 1.5cm;
+}
+
+
+.class .off{
+    background-color: #2e2e5d;
+    margin-top: -2cm;
+    height: 15.4cm;
+    padding-top: 1cm;
+    padding-left: 1.5cm;
+
+}
+
+
+@media (min-width=700px) {
+  .timetable {
+    flex-direction: column;
+  }
+  .timings {
+    margin: 0;
+    padding: 0 0 3px 3%;
+    width: 96%;
+    height: 3em;
+    flex-direction: row;
+    justify-content: center;
+    text-align: right;
+  }
+
+  .name {
+    width: 4%;
+    line-height: 5em;
+    height: 5em;
+  }
+
+  .week {
+    flex-direction: column;
+    
+  }
+
+  .hour {
+    top: 0;
+    width: 6%;
+    height: 100%;
+  }
+
+
+@media (max-width:991px){
+
+   header{
+       left:-120%;
+   }
+
+   #menu{
+       display: block;
+   }
+
+   header.toggle{
+    left:0%;
+   }
+
+   body{
+       padding:0;
+   }
+
+}
+
+
+}
